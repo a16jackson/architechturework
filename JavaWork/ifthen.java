@@ -1,11 +1,11 @@
-Class ifthen
+public class ifthen
 {
 public static void main(String[] args){
-int x = 4
-int y = 5
+int x = 8;
+int y = 5;
 if (x < y) {
     System.out.println(x);}
 
-else{ System.out.printlnn(y);}
+else{ System.out.println(y);}
 }
 }
