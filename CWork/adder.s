@@ -1,13 +1,13 @@
-	.file	"adder.c" 
-	.text
-	.globl	adder2
+	.file	"adder.c"  
+	.text				
+	.globl	adder2		
 	.type	adder2, @function
 adder2:
 .LFB0:
-	.cfi_startproc
+	.cfi_startproc       
 	endbr64
-	pushq	%rbp
-	.cfi_def_cfa_offset 16
+	pushq	%rbp     					 /* pushes the frame pointer to top of stack */
+	.cfi_def_cfa_offset 16				
 	.cfi_offset 6, -16
 	movq	%rsp, %rbp
 	.cfi_def_cfa_register 6
@@ -17,7 +17,7 @@ adder2:
 	popq	%rbp
 	.cfi_def_cfa 7, 8
 	ret
-	.cfi_endproc
+	.cfi_endproc 
 .LFE0:
 	.size	adder2, .-adder2
 	.section	.rodata
