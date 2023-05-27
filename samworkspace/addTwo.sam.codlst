@@ -1,0 +1,10 @@
+d000	000		in	
+3008	001		sta	first
+d000	002		in	
+3009	003		sta	second
+0008	004		lda	first
+7009	005		mul	second
+e000	006		out	
+f000	007		hlt	
+0000	008	first	dat	00
+0000	009	second	dat	00
